@@ -44,6 +44,8 @@ public class HomebankingApplication {
 			accountRepository.save(account1);
 			accountRepository.save(account2);
 
+
+
 		});
 	}
 }
