@@ -10,14 +10,13 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class WebAuthorization extends WebSecurityConfigurerAdapter {
 
     @Override
-
     protected void configure(HttpSecurity http) throws Exception {
 
         http.authorizeRequests()
 
                 .antMatchers("/admin/**").hasAuthority("ADMIN")
 
-                .antMatchers("/**").hasAuthority("USER");
+                .antMatchers("/**").hasAuthority("CLIENT");
 
 
 
